@@ -8,7 +8,7 @@ namespace ChickenCoop3.Models
 {
     public class ChickenBreed
     {
-        public int Id { get; set; }
+        public byte Id { get; set; }
 
         [Display(Name = "Breed")]
         public string Name { get; set; }

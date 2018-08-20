@@ -213,6 +213,14 @@
     <Compile Include="Migrations\201808201532504_AddChickens.Designer.cs">
       <DependentUpon>201808201532504_AddChickens.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808201617417_ChangeChickenBreedIdToByte.cs" />
+    <Compile Include="Migrations\201808201617417_ChangeChickenBreedIdToByte.Designer.cs">
+      <DependentUpon>201808201617417_ChangeChickenBreedIdToByte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808201621062_AddNewChickens.cs" />
+    <Compile Include="Migrations\201808201621062_AddNewChickens.Designer.cs">
+      <DependentUpon>201808201621062_AddNewChickens.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Chicken.cs" />
@@ -312,6 +320,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808201532504_AddChickens.resx">
       <DependentUpon>201808201532504_AddChickens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808201617417_ChangeChickenBreedIdToByte.resx">
+      <DependentUpon>201808201617417_ChangeChickenBreedIdToByte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808201621062_AddNewChickens.resx">
+      <DependentUpon>201808201621062_AddNewChickens.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
