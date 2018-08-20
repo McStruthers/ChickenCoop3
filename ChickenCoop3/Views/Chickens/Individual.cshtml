@@ -1,0 +1,17 @@
+﻿@model ChickenCoop3.Models.Chicken
+
+@{
+    ViewBag.Title = "Individual";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model == null)
+{
+    <p>This is not a valid chicken ):</p>
+}
+else
+{
+    <h2>@Model.Name</h2>
+    <h3>@Model.ChickenBreed.Name</h3>
+}
+

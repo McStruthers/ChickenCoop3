@@ -1,0 +1,24 @@
+﻿@model ChickenCoop3.ViewModels.NewChickenViewModel
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add a Chicken to the Coop!</h2>
+
+@using (Html.BeginForm("Create", "Chickens"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Chicken.Name)
+        @Html.TextBoxFor(m => m.Chicken.Name, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Chicken.ChickenBreed.Name)
+        @Html.DropDownListFor(m => m.Chicken.ChickenBreedId, new SelectList(Model.ChickenBreeds, "Id", "Name"), "Select Breed", new { @class = "form-control" })
+    </div>
+    <div class="checkbox">
+        @Html.CheckBoxFor(m => m.Chicken.IsAdoptable) Is this chicken currently adoptable?
+    </div>
+    <button type="submit" class="btn btn-primary"></button>
+}
+

@@ -1,0 +1,21 @@
+﻿@model List<ChickenCoop3.Models.Chicken>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.Count > 0)
+{
+    <table>
+        @foreach (var chicken in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(chicken.Name, "Individual", new { id = chicken.Id }, null)</td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <p>There are no chickens yet!</p>
+}
